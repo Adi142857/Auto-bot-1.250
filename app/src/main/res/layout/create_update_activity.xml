@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/layout"
+    android:background="@drawable/gradient_3"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/bilbo_swash_caps"
+            android:text="Auto-Bot-edit-menu"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/close_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/icon_close"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="28dp"
+            android:clickable="true"
+            android:layout_marginEnd="16dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/message_received"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="50dp"
+            android:padding="10dp"
+            android:layout_below="@+id/header"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:hint="@string/your_expected_message_from_friends"
+             >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/message_received_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:paddingTop="@dimen/margin_sixteen"
+                android:paddingBottom="@dimen/margin_sixteen" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/message_reply"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/fab_color"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:hint="@string/your_reply_message"
+            android:padding="10dp"
+            android:layout_marginTop="@dimen/margin_sixteen"
+            android:layout_below="@+id/message_received"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/message_reply_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:paddingTop="@dimen/margin_sixteen"
+                android:paddingBottom="@dimen/margin_sixteen" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/done_button"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/fab_color"
+        android:baselineAlignBottom="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="@string/done"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/delete_button"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="@dimen/margin_sixteen"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#F44336"
+        android:baselineAlignBottom="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+

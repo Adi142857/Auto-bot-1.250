@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:id="@+id/layout"
+    android:background="@drawable/gradient_3"
+    android:orientation="vertical">
+
+  <!--  <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input" />-->
+
+  <!--  <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get received content" />-->
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:background="@mipmap/chat_icon"
+      android:layout_gravity="center_horizontal"
+      android:gravity="center_vertical"
+    />
+
+  <Button
+      android:id="@+id/button2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="@dimen/margin_eight"
+      android:background="@drawable/button_background"
+      android:elevation="@dimen/margin_sixteen"
+      android:fontFamily="@font/bilbo"
+      android:paddingStart="@dimen/margin_eight"
+      android:paddingEnd="@dimen/margin_eight"
+      android:text="Make notification listening enabled"
+      android:textColor="@color/white" />
+
+
+<!--
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable data read and write permissions" />
+-->
+
+<!--    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openNotificationSettings"
+        android:text="notification settings" />-->
+
+<!--<Button
+    android:id="@+id/button5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />-->
+
+</LinearLayout>
